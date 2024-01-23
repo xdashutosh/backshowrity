@@ -32,10 +32,8 @@ initializeApp({
 const corsOptions = {
   origin: [
     "http://localhost:3000",
-    "https://hustleforwork.com",
-    "http://localhost:3001",
-    "https://frontfeverr.vercel.app",
-    "https://adminfeverr-eight.vercel.app"
+    "https://adminfeverr-eight.vercel.app",
+    "https://frontshowrity.vercel.app"
   ],
   credentials: true,
 };
@@ -56,7 +54,7 @@ const PORT = process.env.PORT || 5000; // Change the port to 443 for HTTPS
 // };
 
 // // Create an HTTPS server using Express app and SSL credentials
-// const httpsServer = https.createServer(credentials, app);
+// const httpsServer = https.createServer(app);
 
 app.listen(PORT, () => {
   logger.info(`Server started at port ${PORT}`, {
